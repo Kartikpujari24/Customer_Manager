@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.css";
+@import "~@progress/kendo-theme-bootstrap/scss/all.scss";
+ @import "~bootstrap/scss/bootstrap.scss";
+ $ionicons-font-path: "~ionicons/dist/fonts";
+ @import "~ionicons/dist/scss/ionicons.scss";
+ @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+ $fa-font-path: "../node_modules/font-awesome/fonts";
+@import "../node_modules/font-awesome/scss/font-awesome.scss";

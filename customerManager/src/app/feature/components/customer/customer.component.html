@@ -1,0 +1,82 @@
+<div *ngIf="updateFlag==false"> 
+
+<h1><i class="icon ion-md-person"></i> Customers</h1>
+<p><i class="icon ion-md-keypad" (click)="toggleview('card')"></i> Card View</p>
+<p><i class="icon ion-md-list" (click)="toggleview('list')"></i> List View</p>
+
+<div *ngIf="show=='card'">
+    <div class='card'>
+        <div class='card-body'> 
+          <div class='row'>
+            <div class='col-md-2'>Filter by:
+                    <input type='text'
+                    [(ngModel)]='listFilter' />
+            </div>
+          </div>
+            <button type="button" style="margin-left: 900px"class="btn btn-primary" (click)="addNew()">Add New Customer</button>
+              <div *ngFor="let customer of pageOfItems"  style= "display: inline-block; margin:.5rem">
+              <mat-card class="details" >
+                  <mat-card-header style="background: cornflowerblue;">
+                    <mat-card-title>
+                      <a href="javascript:;" style="color: white;" (click)="editCustomer(customer)">{{customer?.firstName}} {{customer?.lastName}}</a>
+                    </mat-card-title>
+                    <!-- <i class="far fa-edit" style='font-size:24px; float:right' 
+                    (click)="editCustomer(customer)"></i> -->
+                    <!-- <button type="button" style="align-self: self-start;" (click)="editCustomer(customer)">Edit</button> -->
+                  </mat-card-header>
+                  <mat-card-content class="content">
+                      <div *ngIf="customer.gender=='male'" mat-card-avatar class="header-image-male"></div>
+                      <div *ngIf="customer.gender=='female'" mat-card-avatar class="header-image-female"></div>
+                      <p class="city">{{customer?.city}}</p>
+                      <p class="city">{{customer?.State}}</p>
+                  </mat-card-content>
+                </mat-card>
+              </div> 
+        </div>
+        <div class="card-footer pb-0 pt-3">
+            <jw-pagination [pageSize]="4" [items]="filteredCustomers" 
+            (changePage)="onChangePage($event)"
+            ></jw-pagination>
+        </div>
+      </div>
+</div>
+
+<div *ngIf="show=='list'">
+<div class='card'>
+    <div class='card-body'> 
+      <div class='row'>
+        <div class='col-md-2'>Filter by:
+                <input type='text'
+                [(ngModel)]='listFilter' />
+        </div>
+      </div>
+        <button type="button" style="margin-left: 900px"class="btn btn-primary" (click)="addNew()">Add New Customer</button>
+      <div>
+        <kendo-grid
+        [kendoGridBinding]="filteredCustomers"
+        [pageSize]="4"
+        [pageable]="true"
+        (cellClick)="cellClickHandler($event)"
+        [height]="500">
+        <kendo-grid-column field="firstName" title="First Name" [width]="140"></kendo-grid-column>
+        <kendo-grid-column field="lastName" title="Last Name"[width]="120"></kendo-grid-column>
+        <kendo-grid-column field="address" title="Address" [width]="120"></kendo-grid-column>
+        <kendo-grid-column field="city" title="City" [width]="120"></kendo-grid-column>
+        <kendo-grid-column field="State" title="State" [width]="120"></kendo-grid-column>
+        <kendo-grid-column field="amount" title="Order Total" [width]="120"></kendo-grid-column>
+       </kendo-grid>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div *ngIf="updateFlag==true">
+  <app-customer-detail 
+  [customerinput]="customerinput"
+  (valueChange)="valueChange($event)"
+  (cancel)="cancel()"
+  (delete)="delete($event)"
+  (addNewcustomer)="addNewcustomer($event)"> 
+  </app-customer-detail>
+</div>

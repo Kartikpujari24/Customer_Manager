@@ -1,0 +1,42 @@
+.details {
+    width: 250px;
+    height: 130px;
+    padding: 0px;
+}
+
+.header-image-male {
+    background-image: url('/assets/profile.jpg');
+    background-size: cover;
+    float:left;
+    height: 60px;
+    width: 60px;
+  }
+
+  .header-image-female {
+    background-image: url('/assets/profile_women.jpg');
+    background-size: cover;
+    float:left;
+    height: 60px;
+    width: 60px;
+  }
+ 
+.city {
+    margin-left: 85px;
+    font-size: 130%;
+}
+
+.content {
+    margin-top: 10px;
+}
+
+
+/* mouse over link */
+a:hover {
+  color: white;
+}
+
+/* selected link */
+a:active {
+  color: white;
+}
+

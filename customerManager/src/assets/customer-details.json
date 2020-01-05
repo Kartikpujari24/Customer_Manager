@@ -1,0 +1,122 @@
+[
+            {
+                "customerId":1,
+                "firstName":"Michelle",
+                "lastName":"Avery",
+                "fullName":"Michelle Avery",
+                "address":"346 Cedar Ave.",
+                "email":"Michelle.avery@acmecorp.com",
+                "gender": "female",
+                "city":"Dallas",
+                "State":"Texas",
+                "amount":"$1,699.89"
+            },
+            {
+                "customerId":2,
+                "firstName":"Ward",
+                "lastName":"Bell",
+                "fullName":"Ward Bell",
+                "address":"12 Ocean View St.",
+                "email":"Ward.bell@acmecorp.com",
+                "gender": "male",
+                "city":"Dallas",
+                "State":"Texas",
+                "amount":"$1,235.96"
+            },
+            {
+                "customerId":3,
+                "firstName":"Robin",
+                "lastName":"Cleark",
+                "fullName":"Robin Cleark",
+                "address":"35632 Richond circle",
+                "email":"robin.cleark@acmecorp.com",
+                "gender": "male",
+                "city":"LA",
+                "State":"California",
+                "amount":"$1,249.94"
+            },
+            {
+                "customerId":4,
+                "firstName":"Pinal",
+                "lastName":"Dave",
+                "fullName":"Pinal Dave",
+                "address":"235235 Yaz Blvd",
+                "email":"Pinal.Dave@acmecorp.com",
+                "gender": "male",
+                "city":"Houston",
+                "State":"Texas",
+                "amount":"$729.85"
+            },
+            {
+                "customerId":5,
+                "firstName":"Albert",
+                "lastName":"Einstien",
+                "fullName":"Albert Einstien",
+                "address":"1 Atomic St",
+                "email":"Albert.Einstien@acmecorp.com",
+                "gender": "male",
+                "city":"Seatle",
+                "State":"Washington",
+                "amount":"$2,425.82"
+            },
+            {
+                "customerId":6,
+                "firstName":"Robyn",
+                "lastName":"Flores",
+                "fullName":"Robyn Flores",
+                "address":"Jefferson Way",
+                "email":"Robyn.Flores@acmecorp.com",
+                "gender": "male",
+                "city":"Buffalo",
+                "State":"New York",
+                "amount":"$1,459.87"
+            },
+            {
+                "customerId":7,
+                "firstName":"Tonya",
+                "lastName":"Smith",
+                "fullName":"Tonya Smith",
+                "address":"346 Cedar Ave.",
+                "email":"Tonya.Smith@acmecorp.com",
+                "gender": "female",
+                "city":"Atlanta",
+                "State":"Georgia",
+                "amount":"$2,495.96"
+            },
+            {
+                "customerId":8,
+                "firstName":"Misko",
+                "lastName":"Hevery",
+                "fullName":"Misko Hevery",
+                "address":"Cedar Ave.",
+                "email":"Misko.Hevery@acmecorp.com",
+                "gender": "female",
+                "city":"Carey",
+                "State":"North Carolina",
+                "amount":"$699.89"
+            },
+            {
+                "customerId":9,
+                "firstName":"Brad",
+                "lastName":"Green",
+                "fullName":"Brad Green",
+                "address":"346 Ave.",
+                "email":"Brad.Green@acmecorp.com",
+                "gender": "male",
+                "city":"Orlando",
+                "State":"Florida",
+                "amount":"$199.89"
+            },
+            {
+                "customerId":10,
+                "firstName":"John",
+                "lastName":"Papa",
+                "fullName":"John Papa",
+                "address":"Ave Park",
+                "email":"John.Papa@acmecorp.com",
+                "gender": "male",
+                "city":"Phoenix",
+                "State":"Arizona",
+                "amount":"$3,459.89"
+            }
+]
